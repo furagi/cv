@@ -1,6 +1,6 @@
 ### Motivation
 
-I liked the https://github.com/sb2nov/resume idea, but didn't like neither the template design, nor some technical details (uncluding the used Docker image), so just ended up building my own solution, using https://www.overleaf.com/latex/templates/dphang-cv-template/wygbzfpbdhnj template (had to adapt it to my needs too though).
+I liked [this idea](https://github.com/sb2nov/resume), but didn't like neither the template design, nor some technical details (uncluding the used Docker image), so just ended up building my own solution, using [this template](https://www.overleaf.com/latex/templates/dphang-cv-template/wygbzfpbdhnj) (had to adapt it to my needs too though).
 
 
 ### Convert the Latex template using Docker
