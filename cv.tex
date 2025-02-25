@@ -1,0 +1,178 @@
+%-------------------------
+% Resume in LateX
+% Author : Ilia Boiko, the original template is taken from https://www.overleaf.com/latex/templates/dphang-cv-template/wygbzfpbdhnj, but changed A LOT in the process.
+% License : MIT
+%------------------------
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{fontawesome5} % Include fontawesome5 here
+\usepackage{enumitem}
+\DeclareFontFamily{U}{fontawesomeOne}{}
+\DeclareFontShape{U}{fontawesomeOne}{m}{n}
+{<-> FontAwesome--fontawesomeone}{}
+\DeclareRobustCommand\FAone{\fontencoding{U}\fontfamily{fontawesomeOne}\selectfont}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{#1}}%
+     \item[]
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{-0.5#1}}%
+\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+#1 &
+#2 \\
+\end{tabular*}}
+
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+	{\LARGE \textbf{Ilia Boiko}}\\
+	Tbilisi, Georgia
+	\vspace{0.05cm}
+	\\
+	\raisebox{-0.2\height}{\Large \faEnvelopeSquare} boikoilia.career@gmail.com \hfill \raisebox{-0.2\height}{\Large \faLinkedin} https://www.linkedin.com/in/ilia-boiko-93449112b \hfill \raisebox{-0.2\height}{\Large \faGithubSquare} github.com/furagi \hfill 
+\end{center}
+
+%====================================== Summary ======================================
+\subsection*{\Large Senior Software Engineering Team Lead}
+\vspace{-.5em}
+\hrule
+\vspace{1em}
+Results-driven software engineering team lead with 10+ years of experience in designing, building and scaling software products. Proven track record in leading high-performing teams, re-architecting systems to enhance product stability and security. Expertise in full-stack development with modern technologies including Python, Django, FastAPI, TypeScript, React, NestJS, PostgreSQL, MongoDB, AWS and GraphQL. Passionate about domain-driven design (DDD), distributed systems and fostering strong development cultures through Agile/Scrum methodologies.
+
+%====================================== Skills ======================================
+\subsection*{\Large Skills}
+\vspace{-.5em}
+\hrule
+\vspace{1em}
+\begin{itemize*}
+	\item {\textbf{Software Development:}} Python, Django, FastAPI, TypeScript, React, Redux, Next.js, NestJS, Apollo GraphQL,  Node.js, Jest.
+	\item {\textbf{Databases \& Cloud:}} PostgreSQL, MongoDB, RabbitMQ, Prisma, Redis, AWS, GCP.
+	\item {\textbf{DevOps \& Tools:}} Nx, Docker, CI/CD, Git, Github Actions.
+	\item {\textbf{Development Practices:}} Agile/Scrum, TDD, System Design, Domain-Driven Design (DDD).
+\end{itemize*}
+
+%====================================== Recent Experience ======================================
+
+\subsection*{\Large Professional Experience}
+\vspace{-.5em}
+\hrule
+\vspace{1em}
+\renewcommand\labelitemi{}
+\renewcommand\labelitemii{$\bullet$}
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+	\item
+		\headerrow
+		{\textbf{Bazaar Origin}}
+		{\textbf{Remote}}
+		\headerrow
+		{\emph{Software Engineering Team Lead}}
+		{\emph{October 2023 -- Present}}
+		\begin{itemize*}
+			\item Led a full-scale project reboot, transforming a struggling startup into a stable, scalable product.
+			\item Built and managed a high-performing 11-member cross-functional team (frontend, backend, QA and design), fostering cross-functional collaboration and improving development and release workflows to enhance product quality.
+			\item Established Agile/Scrum practices and implemented and set up CI/CD pipelines, improving team performance by 20\%.
+			\item Re-architected system components to address security and performance bottlenecks, boosting system performance by 60\% (component-dependent) and reducing technical debt by 80\%.
+			\item Designed and implemented critical frontend and backend components, ensuring scalability and maintainability.
+			\item Led the development of a Telegram spam prevention bot, reducing moderation team efforts by 90\%.
+		\end{itemize*}
+		\vspace{-1em}
+		\begin{flushleft}
+			{\textbf{Tech stack:}} Python, Django, PostgreSQL, MongoDB, Docker, RabbitMQ, TypeScript, NestJS, AWS, Next.js, React, Jest and Apollo GraphQL.
+		\end{flushleft}
+	\item
+		\headerrow
+		{\textbf{SupportLogic.com}}
+		{\textbf{Remote}}
+		\headerrow
+		{\emph{Senior Full Stack Engineer}}
+		{\emph{April 2022 -- October 2023}}
+		\begin{itemize*}
+			\item Developed a new email support app, expanding company's core product capabilities.
+			\item Improved and maintained the company's component library, optimizing usage patterns in a core product. Introduced TDD and enhanced linting configurations, led improving of TypeScript interfaces, thus reducing code review time by 30\%.
+			\item Led the development of a local dev environment project, reducing developer onboarding time by 40\%.
+			\item Architected and led development of an automated customer onboarding product, accelerating the onboarding process by 90\%.
+			\item Resolved tech debt in a newly acquired product, improving both frontend and backend by refactoring raw SQL-heavy code and fixing architectural issues.
+		\end{itemize*}
+		\vspace{-1em}
+		\begin{flushleft}
+			{\textbf{Tech stack:}} TypeScript, React, Jest, Python, FastAPI, Django, PostgreSQL, Redis, Docker, GCP.
+		\end{flushleft}
+		\item
+		\headerrow
+		{\textbf{Genea}}
+		{\textbf{Remote}}
+		\headerrow
+		{\emph{Senior Full Stack Engineer}}
+		{\emph{September 2017 -- April 2022}}
+		\begin{itemize*}
+			\item Built a microservice to integrate 4 third-party camera providers, enabling future integrations with ease, and added live video support to the frontend application, contributing to securing deals with 3 new customers, including Shopify.  
+			\item Improved the frontend application code structure and Webpack configuration, reducing the build time by 60\%, the bundle size over 2x, the codebase size by 15\%, and the app loading time by 40\% for new visitors and over 6x for returning ones.
+			\item Raised the frontend application's unit test coverage from 0\% to 80\%, thus reducing bugs by 20\% on average.
+			\item Completely revamped the frontend application design (at the CEO's request), significantly reducing the technical debt in the process.
+		\end{itemize*}
+		\vspace{-1em}
+		\begin{flushleft}
+			{\textbf{Tech stack:}} TypeScript, React, Redux, Jest, Python, FastAPI, NestJS, PostgreSQL, RabbitMQ, Docker, Heroku.
+		\end{flushleft}
+\end{itemize}
+
+% restore the default list behavior
+\renewcommand\labelitemi{$\bullet$}
+
+%====================================== Other Experience ======================================
+
+\subsection*{\Large Additional Experience}
+\vspace{-.5em}
+\hrule
+\vspace{1em}
+\begin{itemize*}
+	\item \textbf{mySocial, Senior Full Stack Engineer:} React, Redux, TypeScript, Firebase, Google Cloud Functions.
+	\item \textbf{Soshace.com, Middle/Senior FullStack Developer:} MongoDB, AngularJS, ExpressJS.
+	\item \textbf{GTFlix TV/Avodn: Junior/Middle JS Developer:} MongoDB, ExpressJS, BackboneJS, MySQL, Ruby-on-Rails.
+\end{itemize*}
+
+%====================================== Education ======================================
+\subsection*{\Large Education}
+\vspace{-.5em}
+\hrule
+\vspace{1em}
+
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+		
+	\item
+	      \headerrow
+	      {\textbf{KnASTU}}
+	      {\textbf{Komsomolsk-on-Amur, Russia}}
+	      \headerrow
+	      {\emph{B.S. Mathematics and Computer Science} (\textbf{GPA:} 4.4/5)}
+	      {\emph{September 2008 -- June 2012}}
+	      	      
+\end{itemize}
+
+\end{document}
