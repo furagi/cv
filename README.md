@@ -16,8 +16,8 @@ docker run --rm -v "$(pwd)":/docs sphinxdoc/sphinx-latexpdf latexmk -outdir=/doc
 
 ### Preview
 
-![1st page](/cv-0.png)
-![2nd page](/cv-1.png)
+![1st page](/cv-1.png)
+![2nd page](/cv-2.png)
 
 ### License
 
